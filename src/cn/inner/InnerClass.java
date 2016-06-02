@@ -112,6 +112,10 @@ class Outter{
 		}
 		
 	}
+	public static void main(String[] args) {
+		Outter a = new Outter();
+		Outter.Inner b =  a.new Inner();
+	}
 }
 
 
@@ -144,18 +148,30 @@ class Man{
  * 引用方法，OuterCls.Inner inner = new OuterCls.Inner();
  *
  */
-class OuterCls{
+ class OuterCls{
+	 private int a = 0;
+	 private static String c = "abc";
 		public OuterCls() {
 			// TODO Auto-generated constructor stub
 		}
-		static class Inner{
+		static class Inner implements A,B{
 			public Inner(){
 			}
+			Object f1() {
+				return c;
+			}
 		}
-	
+	public static void main(String[] args) {
+		OuterCls.Inner a = new OuterCls.Inner();
+	}
 	
 }
+interface A{
 	
+}
+interface B {
+	
+}
 class AnonymouseInnerClass{
 	public String getDate(Date date) {
 		return date.toString();

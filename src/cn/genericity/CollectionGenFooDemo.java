@@ -2,6 +2,7 @@ package cn.genericity;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class CollectionGenFooDemo {
 	public static void main(String[] args) {
@@ -47,3 +48,13 @@ class StaticTest {
 		System.out.println(str.getClass().getName());
 	}
 }
+
+
+
+
+
+
+
+
+
+
