@@ -24,6 +24,18 @@ public class StringTest {
     	System.out.println(str);
     	Short s=20;
     	float pi=2.13f;
+    	int[] a = {1,2,3,4,5};
+    	int [] b = new int[5];
+    	int tmp = 0;
+    	while(tmp < a.length) {
+    		int c = b[tmp]  = a[tmp++];  
+    		System.out.println(c + "" +tmp);
+    	}
+         
+    	System.out.println(b[0] +" " + b[4]);
+    	
+    	
+    	
     } 
 
 }
