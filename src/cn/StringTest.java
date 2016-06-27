@@ -1,5 +1,7 @@
 package cn;
 
+import java.util.Hashtable;
+
 public class StringTest {
     public static void main(String args[]) {  
         
